@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Github App</string>
+    <string name="search_hint">Masukkan kata</string>
+    <string name="followingText">Following</string>
+    <string name="followerText">Followers</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="favorite_kosong">List Favorite Anda Kosong</string>
+    <string name="username">Username</string>
+</resources>

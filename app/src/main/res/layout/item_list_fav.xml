@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo_profil"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/photo_profil"
+            android:textSize="18sp"
+            android:textColor="@color/greensage"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            card_view:layout_constraintEnd_toStartOf="@id/btnDelete"
+            card_view:layout_constraintStart_toEndOf="@+id/photo_profil"
+            card_view:layout_constraintTop_toTopOf="@+id/photo_profil"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            tools:text="username" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintStart_toEndOf="@id/txtUsername"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center_horizontal"
+            android:background="@drawable/ic_baseline_delete_24"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
